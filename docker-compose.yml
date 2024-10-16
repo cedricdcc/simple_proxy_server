@@ -4,3 +4,5 @@ services:
     build: .
     ports:
       - "5301:80"
+    volumes:
+      - ./logs:/var/log/nginx  # Map the Nginx log directory to a host directory
