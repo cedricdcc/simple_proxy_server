@@ -3,6 +3,6 @@ services:
   nginx-proxy:
     build: .
     ports:
-      - "5301:80"
+      - "5301:443"
     volumes:
       - ./logs:/var/log/nginx  # Map the Nginx log directory to a host directory
