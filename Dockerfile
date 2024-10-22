@@ -10,5 +10,5 @@ RUN openssl req -x509 -nodes -days 5 \
 
 # This takes a while to run:
 # RUN openssl dhparam -out /etc/nginx/dhparam.pem 4096
-
+COPY main_nginx.conf /etc/nginx/nginx.conf
 COPY nginx.conf /etc/nginx/conf.d/docker-dev.vliz.be.conf
